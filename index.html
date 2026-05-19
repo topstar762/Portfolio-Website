@@ -570,7 +570,7 @@ document.getElementById('contactForm').addEventListener('submit', async function
   document.getElementById('formErrorMsg').classList.add('hidden');
 
   try {
-    const API_URL = window.location.hostname === 'localhost' ? 'http://localhost:5000/api/contact' : '/api/contact';
+    const API_URL = 'https://portfolio-backend-wjeh.onrender.com/';
     const res = await fetch(API_URL, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
